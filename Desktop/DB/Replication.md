@@ -178,14 +178,3 @@
     select count(*) from employees;
     select * from employees limit 10\G;
     ```
-
-```sql
-docker exec -it mysql1 bash
-
-mysql -u root -p
-> ssu
-
-show variables like '%binlog_format%'; # Row가 base
-
-show varibales like '%isolation%'; # REPEATABLE_READ가 기본
-```
